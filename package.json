@@ -1,0 +1,15 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Project for Postman", 
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "api-tests-QA": "newman run tests/DataSet_Nimbus2.postman_collection -e Nimbus_DataSet.postman_environment -k -r htmlextra --reporter-htmlextra-export TestResult.html"
+  },
+  "author": "",
+  "dependencies": {
+    "newman": "^4.5.4"
+  }
+}
